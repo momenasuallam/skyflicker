@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Skyflicker</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css" >
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="js/bootstrap.min.js" >
+<link rel="stylesheet" href="js/bootstrap.js">
+<link rel="stylesheet" href="css/mystyle.css">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</head>
+<style type="text/css">
+    body {
+  /* Location of the image */
+  background-image: url(img/pg7bg.png);
+  /* Image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Image doesn't repeat */
+  background-repeat: no-repeat;
+  
+  /* Makes the image fixed in the viewport so that it doesn't move when 
+     the content height is greater than the image height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based on its container's size */
+  background-size: cover;
+  
+  /* Pick a solid background color that will be displayed while the background image is loading */
+  background-color:#464646;
+  
+  /* SHORTHAND CSS NOTATION
+   * background: url(background-photo.jpg) center center cover no-repeat fixed;
+   */
+}
+</style>
+<body>
+  <div class="mainsection" style="padding-bottom: 0px;">
+     <div class="container-fuild ">
+  <!--
+     <div class="sidemove">
+            <a href="page2.html">
+               <img src="img/p1.png" style="margin-top: 100px;">
+            </a> 
+          </div>
+        -->
+
+      <div class=" myresmoving2">
+           <div class="mymovepagemain">
+          <a href="#" class="movesresme"><li class="fa fa-chevron-up" 
+            style="color: #fff;"></li></a>
+          <a href="index.html"><li class="fa fa-circle-o" 
+            style="color: #fff;"></li></a>
+          <a href="page2.html"><li class="fa fa-circle-o" 
+            style="color: #fff;"></li></a>
+          <a href="page3.html"><li class="fa fa-circle-o" 
+            style="color: #fff;"></li></a>
+          <a href="page4.html"><li class="fa fa-circle-o" 
+            style="color: #fff;"></li></a>
+          <a href="page5.html"><li class="fa fa-circle-o" 
+            style="color: #fff;"></li></a>
+          <a href="page6.html"  class=""><li class="fa fa-circle-o" 
+            style="color: #fff;"></li></a>
+          <a href="page7.html" class="active"><li class="fa fa-circle-o" 
+            style="color: #fff;"></li></a>
+          <a href="#" class=" movesresme"><li class="fa fa-chevron-down" 
+            style="color: #fff;"></li></a>
+       
+      </div>
+         </div>
+
+ </div>
+ 
+
+
+
+
+<div class="secfooter">
+   <div class="mainsection" style="margin-top: 50px; padding-top: 20px; padding-bottom: 20px;  background: #adb5bd8c;">
+   <div class=" mb-10" style="text-align: center;">
+          <div class="maindiv2">
+             <p class="mytext2">Share this page</p>
+              <img src="img/fb.png" class="iconsimg ml-40 mr-20">
+              <img src="img/linkedin.png"  class="iconsimg mr-20">
+              <img src="img/insta.png" class="iconsimg">
+          </div>
+         </div>
+         <div class="mb-10" style="text-align: center;">
+          <div class="maindiv2">
+             <p class="mytext2">Download the app</p>
+              <p class="mytext4">This app is available for Android</p>
+              <img src="img/google.png" class="dow-icons mr-20">
+              <img src="img/apple.png"  class="dow-icons mr-20">
+          </div>
+         </div>
+ </div>
+  <section class="mainsection" style="background-color: #fff; margin-top: 0px; padding-top: 20px; padding-bottom: 20px;">
+     <div class="container myfooterflex" >
+      <img src="img/logo.png" style="width: 100px; height: 45px;">
+      <div style="margin-right: 30px;">
+        <nav class="clearfix">
+      <ul class="clearfix topnav">
+        <li><a href="#">CAREER</a></il>
+        <li><a href="#" data-toggle="modal" data-target="#aboutus">ABOUT US</a></il>
+        <li><a href="#" data-toggle="modal" data-target="#terms">Terms of use</a></il>
+        <li><a href="#" data-toggle="modal" data-target="#policy">Refund and Return Policy</a></il>
+        <li><a href="#" data-toggle="modal" data-target="#privacy">Privacy</a></il>  
+        <li><a href="#" data-toggle="modal" data-target="#contactus">CONTACT US</a></il>  
+        
+             
+      </ul>
+      <a href="#" id="pull">&#9776;</a>        
+    </nav>
+      </div>
+
+     </div>
+
+   </section>
+</div>
+  </div>
+
+  <!-- Modal contactus -->
+<div class="modal fade" id="contactus" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title terms-title" id="exampleModalLabel">Contact Us</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><img src="img/close.png"></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form style="margin-bottom: 40px;">
+  <div class="form-row">
+    <div class="col-md-12">
+      <label for="">Name*</label>
+    </div>
+    <div class="col-md-4 mb-3">
+      
+      <input type="text" class="form-control "  required>
+      <div class="">
+        First
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <input type="text" class="form-control "  required>
+      <div class="">
+        Last
+      </div>
+    </div>
+  </div>
+    <div class="form-row">
+    <div class="col-md-8 mb-3">
+        <label for="">Email*</label>
+      <input type="email" class="form-control "  required>
+    </div>
+  </div>
+
+    <div class="form-row">
+    <div class="col-md-8 mb-3">
+        <label for="">Phone Number</label>
+      <input type="text" class="form-control "  required>
+    </div>
+  </div>
+   <div class="form-group">
+    <label for="exampleFormControlTextarea1">Write Here*</label>
+    <textarea class="form-control" id="" rows="5"></textarea>
+  </div>
+  
+  <button class="btn btn-sub" type="submit">Submit</button>
+</form>
+       
+        <p style="text-align: center;">
+   Orchid Plaza (5th floor), House No.2, Road No.28(New No.15),Mirpur Road,Dhanmondi Dhaka-1209, Bangladesh
+   <br>
+   <br>
+        </p>
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal about us -->
+<div class="modal fade" id="aboutus" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title about-title" id="exampleModalLabel">About us</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><img src="img/close.png"></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h3 style="font-weight: 600;">About us</h3>
+        <p class="justify-me">
+           <br>
+          Just make your wish. Sky flicker connects you to people who make your wishes come true. Now everyone can earn extra money through international & domestic traveling. Our mission is to sell good & quality products to our customers. Travelers can minimize their travel costs by using Sky Flicker to bring products to our country. Ensuring quality and genuine products to our customers is our utmost priority. Sky Flicker connects Traveler & Wisher who help each other. Sky Flicker does all your shopping and shipping directly to you.
+          <br>
+           <br>
+          Sky Flicker connects you to people who make your wishes come true. Now everyone can earn while granting each other’s wishes, be it domestic product delivery or bringing products from abroad while travelling. This is a hub for Aladdin and Jinn, for wishers and travelers.
+           <br>
+           <br>
+          Through the three segments of our app, you get to connect to the right people to make your wishes come true.
+           <br>
+           <br>
+          Traveler and Wisher: Now everyone can earn extra money through international & domestic traveling. Our mission is to sell good & quality products to our customers. Travelers can minimize their travel costs by using Sky Flicker to bring products to our country. Ensuring quality and genuine products to our customers is our utmost priority. Sky Flicker connects wishers and travelers with the aim to provide excellent overseas shopping and affordable traveling experience. Our mission is to legally deliver items from abroad. Now you can get your hands of foreign products that you’ve always wanted but couldn’t get because they aren’t locally available, or you don’t have relatives and friends who can bring them for you. We connect you to travelers willing to bring your requested products while maintain a fast, reliable and hassle-free experience. Sky Flicker does all your shopping and shipping directly to you.
+           <br>
+           <br>
+          Aladdin and Jinn: Sky Flicker connects you to people who can make your wish come true. Ranging from product buying to service providing to parcel delivery, wishes can be anything and we’ll find you the right people to make those wishes come true. Aladdin and Jinn help each other – Aladdin pays the Jinn and Jinn provides service. Be it product delivery, be it buying something, be it doing something – Sky Flicker will connect you with all sorts of Jinn. And as a Jinn, you can easily earn money by helping others. You’ll find all sorts of jobs to do on our app to easily earn. You can earn while doing the works you love.
+           <br>
+           <br>
+          Magic Carpet: With our Magic Carpet facility, you can earn by taking passengers when driving back from your hometown. With Sky Flicker, the search for passengers and drivers is easy, fast, and reliable. As a driver, you can list when you will return from home on our app and the passengers can see it and contact you. No more returning from your hometown with an empty car – now you can earn while doing so. And as a passenger, you don’t have to search for cars anymore while standing on the road, you can find lots of cars returning from your area at your needed time and contact them. This way, the drivers earn money and the passengers get a ride!
+           <br>
+            <br>
+             <br>
+        </p>
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+<!-- Modal terms -->
+<div class="modal fade" id="terms" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title terms-title" id="exampleModalLabel">Terms of Use</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><img src="img/close.png"></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h3 style="font-weight: 600;">Terms of Use</h3>
+        <p class="justify-me">
+           <br>
+      <b> Sky Flicker Terms of Use</b>
+ <br> <br>
+<b>Welcome to Sky Flicker</b>
+ <br> <br>
+Thank you for choosing to be part of our community at Sky Flicker Limited (“Company”, “we”, “us”, or “our”). We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about our policy, or our practices with regards to your personal information, please contact us at skyflickers@gmail.com.
+ <br> <br>
+“Wisher” means a Member who requests products via the Site, Application or Services, OR a Member who contacts a traveler through SKY FLICKER to transport products in exchange of a charge as agreed upon between respective shopper and traveler supervised and intermediated by Sky Flicker. A shopper willingly enters into contracts, carries the burden of ordering products, makes payments on their own discretion, and exempts SKY FLICKER from any liability and excuses SKY FLICKER for any mistakes, violations of trusts, and counterfeit actions happened between the time of placing a “Request” and the end of the “Connection” made via the Site, Application, and Service.
+ <br> <br>
+“Traveler” means a Member who submits his or her travel information and consents that upon the creation of a Connection with a Customer, he or she is willing to carry the products listed in that Connection to transport to the respective location approved and agreed upon by Sky Flicker, the Shopper and the Traveler in exchange of previously agreed-upon charges and fees via the Site, Application and Services. A Traveler willingly enters into contracts, carries the burden of transporting the products, delivers them to Sky Flicker authorized location or to Sky Flicker authorized operative Members on their own discretion, and exempts SKY FLICKER from any liability and excuses SKY FLICKER for any mistakes, violations of trusts, and counterfeit actions happened between the time of adding a “Flight” and the end of the associated Connections of that Flight made via the Site, Application, and Services.
+ <br> <br>
+Traveler and Wisher: Now everyone can earn extra money through international & domestic traveling. Our mission is to sell good & quality products to our customers. Travelers can minimize their travel costs by using Sky Flicker to bring products to our country. Ensuring quality and genuine products to our customers is our utmost priority. Sky Flicker connects wishers and travelers with the aim to provide excellent overseas shopping and affordable traveling experience. Our mission is to legally deliver items from abroad. Now you can get your hands of foreign products that you’ve always wanted but couldn’t get because they aren’t locally available, or you don’t have relatives and friends who can bring them for you. We connect you to travelers willing to bring your requested products while maintain a fast, reliable and hassle-free experience. Sky Flicker does all your shopping and shipping directly to you.
+ <br> <br>
+Aladdin and Jinn: Sky Flicker connects you to people who can make your wish come true. Ranging from product buying to service providing to parcel delivery, wishes can be anything and we’ll find you the right people to make those wishes come true. Aladdin and Jinn help each other – Aladdin pays the Jinn and Jinn provides service. Be it product delivery, be it buying something, be it doing something – Sky Flicker will connect you with all sorts of Jinn. And as a Jinn, you can easily earn money by helping others. You’ll find all sorts of jobs to do on our app to easily earn. You can earn while doing the works you love.
+ <br> <br>
+Magic Carpet: With our Magic Carpet facility, you can earn by taking passengers when driving back from your hometown. With Sky Flicker, the search for passengers and drivers is easy, fast, and reliable. As a driver, you can list when you will return from home on our app and the passengers can see it and contact you. No more returning from your hometown with an empty car – now you can earn while doing so. And as a passenger, you don’t have to search for cars anymore while standing on the road, you can find lots of cars returning from your area at your needed time and contact them. This way, the drivers earn money and the passengers get a ride!
+ <br> <br>
+<b>Refund and Return Policy</b>
+ <br> <br>
+In case of Pre-ordered products, a full refund can be given after seller refuse confirm order. Traveler can take his product money from our office or bank account & digital wallet. We will hold the payment of both parties until they confirm goods. Wisher have to pay full amount of product value. When we get confirmation from wisher, then we release money to the traveler bank account.
+ <br> <br>
+Wisher (Aladdin) may refuse to accept the Sky Flicker items only if the Traveler has brought incorrect goods (for example, specifications which differ from the agreement between the parties, in terms of brand, color, style, size, etc.) or the condition of the Possession’s items is other than that agreed to between the parties (for example, damaged or used items or otherwise not in the condition represented). Wisher (Aladdin) may not refuse acceptance of Sky Flicker items because they changed their mind about the transaction, or through an attempt to renegotiate the price of the items or because they have found the items elsewhere. Wisher (Aladdin) agree that Sky Flicker, in its sole discretion, may determine whether the reason for rejection is acceptable under applicable policies and if Sky Flicker determines the rejection is impermissible or unauthorized, Wisher (Aladdin) agree that their Payment Method may be charge and the transaction completed as agreed to by the parties. Except as set forth above, in instances where the Wisher (Aladdin) fails to appear for inspection and acceptance within five (5) days of the delivery date, Wisher (Aladdin)s are required to confirm inspection and acceptance of Sky Flicker items in the Sky Flicker messaging on the Platform in order to release funds to Travelers.
+ <br> <br>
+<b>Cancellation</b>
+ <br> <br>
+Wisher will bear cancellation charge. In case of Pre-ordered products, a full refund can be given after seller refuse confirm order.
+ <br> <br>
+<b>Open Account</b>
+ <br> <br>
+Traveler &Wisher can sign up through Email, Facebook .The client will need an identity document (passport/driving license/NID) for post product & give service each other.
+ <br> <br>
+Three type users can use our app – International user and Domestic user. If you have an international valid passport, you are considered both an International and a Domestic User. We consider you domestic user when you upload NID & if you have driving license apps consider you across country Rider.
+ <br> <br>
+<b>Modification or Changes to the Sky Flicker Platform, the Terms of Use and Incorporated Documents</b>
+ <br> <br>
+We are continually changing and improving the Sky Flicker Platform. We reserve the right in our sole discretion to modify it, to add or remove features or functionalities or to suspend or terminate any part or all of the Sky Flicker Platform with or without notice to you. We may also modify or amend these Terms or incorporated documents to reflect changes in the law, changes to the Sky Flicker, Fees (defined below) or any other aspect of the relationship between Sky Flicker and You. You should look at the Terms regularly.
+ <br> <br>
+If we make changes to these Terms, or any other document incorporated by reference here, we will post the changes to the Terms of Use pages of our Platform, send you a message or otherwise attempt to notify you. Amendments are effective no sooner than thirty (15) days after we post them on the Sky Flicker Platform for existing users and immediately for all the new users joining and accepting the terms after and on the day these are amendments are posted, unless we notify You otherwise. If You do not agree to the Terms, including as changed or modified, We will be sorry to see you go, but Your only recourse is to stop using or accessing the Sky Flicker Platform.
+ <br> <br>
+<b>Eligibility and Use of the Platform</b>
+ <br> <br>
+Our Platform are not designed to appeal to persons under 18 years old.We do not knowingly collect data from or market under 18 years of age.
+ <br> <br>
+We do not knowingly solicit data from or market under 18 years of age. By using the Apps, you represent that you are at least 18 or that you are the parent or guardian of such a minor and consent to such minor dependent’s use of the Apps. If we learn that personal information from users less than 18 years of age has been collected, we will deactivate the account and take reasonable measures to promptly delete such data from our records. If you become aware of any data we have collected under age 18, please contact us at skyflickers@gmail.com.
+ <br> <br>
+<b>Account Registration, Member Verification and Other Member Representations and Warranties</b>
+ <br> <br>
+To access some of Our features and services, You will need to validly register for an account and to become a Member. You are only eligible to have one (1) Account at a time, and are not allowed to transfer Your account at any time to another person or entity. As indicated above, by doing so, You represent and warrant that you are over the age of eighteen (18) and are capable of entering into legally binding agreements in the relevant jurisdiction (s).
+ <br> <br>
+You also represent and warrant that You will comply with any and all applicable import and export control laws or customs laws in Your local jurisdiction. You also represent and warrant that (i) neither You nor the subject of Your transaction (i.e., Sky Flicker items/services) is the subject of a Bangladesh or other country’s embargo, or that it has been designated by the Bangladesh (ii) You are not listed on any Bangladesh or any other country’s list of prohibited or restricted parties.
+ <br> <br>
+To create a Member account, You must create a password-protected account (“Account”). You may register for an Account using Your email and creating a password, or by using your existing third party networking accounts that are enabled by Sky Flicker now or in the future such as Google, or Facebook, Twitter or others (“Third Party Networks”), if any. You agree to provide accurate, current and complete information during the Account registration process and at all other times when You use the Sky Flicker Platform, and to continually update information sufficient to keep it accurate, current and complete. You and You alone are responsible for safeguarding your Sky Flicker Account password and other information, if applicable to a Third Party Network, and You are solely responsible for all activity that occurs on or through your Account or Third Party Network created account and that You will immediately inform Sky Flicker of any suspected unauthorized use. Sky Flicker is not liable or otherwise responsible for any loss or damage that any party claims is caused in whole or part by unauthorized use of Your Account. Notwithstanding the foregoing, You may, however, be liable or responsible to Sky Flicker or third parties due to unauthorized use of Your Account.
+ <br> <br>
+You acknowledge and agree that, as permitted by applicable laws, Sky Flicker may in its sole discretion, but is not obligated to, obtain reports from consumer reporting agencies or otherwise review publicly available information about Members, including sexual offender registration lists or databases compiling information about criminal convictions relating to, without limitation, crimes of violence, theft, burglary, conspiracy, abuse, neglect, fraud, dishonesty, perjury, forgery, embezzlement, cyber crimes, identity theft, drug related offense, obstruction, organized crime, prostitution, warrant violations, weapons offenses and crimes which endanger the life or property of others. By accessing or using the Sky Flicker Platform, You authorize us to use Your personal information (including name, address, date of birth or other identifying information) to obtain these reports and agree that we may, in our sole discretion suspend, cancel, block, restrict or terminate Your access to the Sky Flicker Platform based upon Our evaluation of such reports, again in our sole discretion. If we undertake an effort to verify Your background through these or other methods (which we are not obligated to do under these Terms), and choose to identify you as “Verified,” such a notation shall mean nothing other than that You completed a verification or identification process and shall not constitute an endorsement of You or any other Member to the public or to any Member.
+ <br> <br>
+<b>SMS or Text Messaging</b>
+ <br> <br>
+By creating an Account, and becoming a Member, You agree that the we may send you text (SMS) messages as part of the normal business operation of your use of the Sky Flicker Platform. Such uses include without limitation, to provide You with information you requested from Sky Flicker or its Members, to let you know about features, functions, improvements or changes to the Platform, to facilitate Your identification of desired Members or Members who may be able willing to discuss Sky Flicker Items, or other aspects of your Account.
+ <br> <br>
+These text (SMS) messages may be automated or non-automated, and while Sky Flicker does not charge You to send or receive such messages, message and data rates may still apply by your carrier or other provider. You may opt-out of receiving text (SMS) messages from us at any time by email: service@skyflicker.com. You acknowledge that opting out of receiving text (SMS) messages may impact your use of and ability to fully use the Sky Flicker Platform.
+ <br> <br>
+<b>Prohibited Conduct</b>
+ <br> <br>
+Regardless of whether you access or use the Sky Flicker Platform with or without an account, by accessing, searching on or using the Sky Flicker Platform in any way, you agree that will not:
+
+   <br> <br>
+<i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+Use another person’s Account, to misrepresent yourself, Your identity or qualifications or transactions;
+   <br> <br>
+<i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+Violate any state, local, national or international law, or any rule, regulation, tariff or duty, including customs laws or regulations that may apply to you or to your relationship with other Members or to any Sky Flicker Items/services.
+   <br> <br>
+<i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+Use any automated system including but not limited to robots, spiders, offline readers, crawlers, scrapers to access, copy, maintain or compile the Sky Flicker Platform or content thereon for any purpose without Sky Flicker prior written approval;
+   <br> <br>
+<i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+In any manual or automated way copy, appropriate, use or disclose any copyrighted text, or other intellectual property, rights of publicity, privacy or contract rights or otherwise misuse or misappropriate Sky Flicker Platform information or content including but not limited to, use on a mirrored, competitive, or third-party site;
+   <br> <br>
+<i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+Transmit more request messages through the Sky Flicker Platform in a given period of time than a human can reasonably produce in the same period by using a conventional online web browser;
+   <br> <br>
+<i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+Take any action that (a) may unreasonably encumber the Sky Flicker Platform’s infrastructure; (b) interferes or attempts to interfere with the proper working of the Platform or any third-party participation; © bypasses measures that are used to prevent or restrict access to the Sky Flicker Platform; (d) circumvents, disables or otherwise interferes with security features of the Sky Flicker Platform; (e) distributes viruses or any other technologies that may harm Sky Flicker or users; (f) uses the Sky Flicker Platform in a way that violates any copyrights, trade secrets, or other rights of any third party, including privacy or publicity rights; or (g) circumvents or manipulates and fees, fee structure or billing claimed or owed as a result of interaction, relationships or transactions that may be facilitated on the Sky Flicker Platform;
+   <br> <br>
+<i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+As a Member, use the Sky Flicker Platform in any manner that circumvents Your obligation to pay Sky Flicker or another Member or to bring Sky Flicker Items as agreed;
+   <br> <br>
+<i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+“Stalk,” or harass or intimidate any other Member or user of the Sky Flicker Platform; or collect, harvest or publish any personally identifiable data including but not limited to names or other account information, from the Sky Flicker Platform, or use the communication systems provided by the Sky Flicker Platform for any reason not explicitly authorized by these Terms, including but not limited to commercial solicitation purposes;
+   <br> <br>
+<i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+Recruit, solicit, or contact in any form Members for employment or any other use not specifically intended by the Sky Flicker Platform;
+Take any inappropriate or unlawful actions, including the submission of inappropriate or unlawful content to or through the Sky Flicker Platform, including without limitation content that is hateful, illegal, profane, obscene, defamatory, threatening, or discriminatory, or that advocates, promotes, or encourages inappropriate activity, conduct that would be considered a criminal offense, or conduct that would give rise to civil liability or violate any Land of law;
+Violate any Sky Flicker policies that govern or relate to Your use of the Sky Flicker Platform and interactions with You and third parties;
+Take any action that may undermine the efficacy or accuracy of reviews or ratings systems maintained by Sky Flicker and which relate to Members;
+   <br> <br>
+<i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+to fail to perform as agreed upon by Members;
+   <br> <br>
+<i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+Engage in fraudulent conduct including but not limited to entering into a relationship with another Member to obtain and/or bring Sky Flicker Items/ services with no intention of following through, offering to make prohibited money transfers or to arrange to obtain and/or bring Sky Flicker Items/ services that are prohibited by applicable law at places of disembarkation, transit or embarkation or entering into any relationship fraudulently or for fraudulent purpose or to conclude your arrangement off the Sky Flicker Platform or to circumvent or evade the Sky Flicker Platform or to evade any other requirement of these Terms;
+   <br> <br>
+<i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+Registering for more than one (1) Sky Flicker Account or registering for a Sky Flicker Account on behalf of an individual other than yourself or transferring or purporting to transfer your Sky Flicker Account to any other person.
+   <br> <br>
+<i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+Undertake any activity or engage in any conduct that is inconsistent with the business or purpose of the Sky Flicker Platform; and
+   <br> <br>
+<i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+Attempt to indirectly undertake or achieve any of the foregoing.
+ <br> <br>
+ <b>User or Third Party Generated Content</b>
+<br> <br>
+We may, in our sole discretion, permit you to post, upload, publish, submit content created wholly by You or third parties and that is not created in whole or part by Us (“User Content”), which may include but is not limited to profile information, information about Sky Flicker Items/ Service or relationships and similar content. By making available User Content to Us, You grant to Sky Flicker an irrevocable worldwide, perpetual, non-exclusive, transferable, royalty-free and fully paid up license, with the right to sublicense, use, copy, adapt, modify, distribute, license, sell, perform, transfer, display, publicly perform, stream broadcast, access, view and otherwise exploit (by means now known or to be developed in the future) the User Content on the Sky Flicker Platform and for any other purpose in our sole discretion, except that private messaging through the Sky Flicker Platform will not be used by Sky Flicker in public advertising. The license granted by You to Sky Flicker will survive termination of these Terms and shall survive termination of the Sky Flicker Platform, if any, or termination of Your Account. Sky Flicker does not claim any ownership interest or rights in Your User Content and nothing in these Terms shall be deemed to restrict rights You may have in Your User Content.
+<br> <br>
+You acknowledge and agree that Sky Flicker has no role in the creation, either in whole or in part, of User Content you provide to Sky Flicker or to the Sky Flicker Platform and that You alone are solely responsible for all User Content that You make available, including without limitation Requests, Offers and Acceptances, and the information that may be contained therein. You thus represent, warrant and agree that (i) you either own or have all necessary rights, licenses, consent and releases necessary to grant Sky Flicker the rights in User Content under these Terms; (ii) neither the User Content nor your posting, uploading, publication, submission or transmittal of User Content or Sky Flicker use of Your User Content (in whole or part infringes, misappropriates or violates any third party’s patent, copyright, trademark, trade secret, moral rights or other intellectual property or proprietary rights or result in violation of any applicable law, rules, regulation or court order. You acknowledge and agree that Sky Flicker may exercise any traditional editorial function as to User Content including but not limited to proofreading, editing, summarizing, digesting or other editing without becoming the author of such content, and that it remains Your sole responsibility to monitor your User Content and to guarantee that any such edited User Content is accurate and consistent with your re<br> <br>presentations, warranties and agreements in these Terms.
+
+We reserve all rights, in our sole discretion to remove, suspend, disable access to or otherwise to restrict access to the Sky Flicker Platform or to User Content that We consider to be a violation of these Terms, Sky Flicker policies and procedures, We consider harmful to the Sky Flicker Platform, to Sky Flicker or to any other Member or third party or which We consider to be otherwise objectionable or for any other reason.
+<br> <br>
+<b>Payment Terms and Appointment of Sky Flicker as Limited Payment Collection</b>
+
+As set forth above, except where we otherwise specifically agree in writing, Sky Flicker does not own, create, sell, offer, resell, provide, control, manage, buy, offer to buy, bring, or offer to bring or supply any Sky Flicker Items/ services or any other tangible or intangible thing that You may discuss with another Member. When wisher and Travelers make or accept an offer to transact, they are entering into a contract with each other, and even though Sky Flicker may act as a limited payment collection agent as defined below, it is not a party to any agreement discussed or entered into between Members.
+<br> <br>
+Sky Flicker may restrict the availability of payment services, or any aspect or feature of payment services, to perform maintenance of systems to help ensure the proper functioning of the system or to improve, enhance, modify, suspend or terminate any payment service, or to introduce new or additional services at any time, including through additional third parties. The payment-related services may contain links to certain third-party websites, applications, services or resources (“Third Party Services”). Any such Third Party Services are subject to different terms or conditions and privacy practices created or controlled by third party providers and not Sky Flicker, and Members should review them carefully and independently. Sky Flicker is not responsible for or liable for the availability, accuracy, reliability or anything related to Third Party Services, including the content thereon. Links or other access to information of Third Party Service providers shall not constitute an endorsement by Sky Flicker of such providers or their services.
+<br> <br>
+<b>Appointment of Sky Flicker Payment Collection</b>
+<br> <br>
+By agreeing to these Terms, and in accessing or using the Sky Flicker Platform, Travelers appoint Sky Flicker as their respective limited payment collection agent, authorized to receive and collect payments for transactions entered into between Members, including (i) Item Costs, (ii) Sky Flicker Service Fees, (iii) Traveler’s Fees, (iv) Acceleration Fees, if any, and (iv) Taxes and other Government Regulatory Fees (for example, without limitation duties, tariffs or government charges) (“Total Fees”) owed by Wisher to Travelers as set forth in these Terms. Payments made by Wisher (Aladdin) to Sky Flicker in connection with an Offer shall be considered the same as a payment made directly to Travelers, and Travelers agree to provide the Sky Flicker Items to Wisher in the agreed-upon manner as if the Traveler has received payment directly from Wisher. You further agree that Sky Flicker obligation to remit payments to Travelers is conditioned upon and extends only to sums that it has successfully received from Wisher in accordance with the relevant agreements, and also that in accepting appointment as the limited payment collection agent, Sky Flicker assumes no liability for any acts or omissions of Wisher or Travelers, Members or any other person. As limited payment collection agent, Sky Flicker assumes no liability or obligation for any funds or obligations owed by Wisher that were not collected by Sky Flicker in its role under this Paragraph.
+<br> <br>
+Each Wisher (Aladdin) and Traveler acknowledges and agrees that, notwithstanding the fact that Sky Flicker is not a party to the agreement between Travelers and Wisher, Sky Flicker acts as the Travelers payment collection agent for the limited purpose of accepting collection from Wisher on behalf of the Traveler. Upon Wisher’ remittance to Sky Flicker, Wisher’ payment obligation to the Traveler for agreed upon amounts is extinguished, and Sky Flicker is responsible for remitting funds collected to Travelers in the agreed upon manner. In the event that Sky Flicker does not remit such amounts, Travelers’ recourse is only against Sky Flicker, and not Wisher directly.
+<br> <br>
+If any Member does not make a payment properly, or if Sky Flicker cannot properly charge a payment method on file with it, or any other payment method for any reason, Sky Flicker expressly reserves all rights under applicable law to recover payment as well as all of its costs and expenses incurred, including reasonable attorneys’ or other professionals’ fees, in pursuing such payment (s).
+<br> <br>
+<b>Transactions between Wisher (Aladdin) and Travelers on Sky Flicker</b>
+<br> <br>
+Sky Flicker strives to make the Sky Flicker Platform useful, simple and efficient. Sky Flicker Wisher (Aladdin)s located globally may gain access to friends who have better availability to Sky Flicker Items in other markets who may be fully willing to bring these items to their Sky Flicker friends and colleagues. At the same time, Sky Flicker enables Travelers to help their friends and community, and may even help them defray the time and expense of their travel to see and help their global Sky Flicker friends. Through the Sky Flicker Platform, Sky Flicker helps to bring diverse groups of people together, and hopefully, to minimize the differences and divisions that can accumulate over time, geographical distance and cultures.
+<br> <br>
+As set forth more fully below, in a typical transaction facilitated on the Sky Flicker Platform, the Wisher (Aladdin) publishes an invitation called a “Wisher (Aladdin) Request” which identifies desired Sky Flicker Items. Interested Travelers or Travelers matched by the Sky Flicker Platform, may then make offers to bring Sky Flicker Items on terms expressed between Members in a “Traveler’s Offer.” When agreed upon, execution of the “Wisher (Aladdin)’ Acceptance, fixes the final and binding agreement between the Members.
+<br> <br>
+<b>The Wisher (Aladdin) Request</b>
+<br> <br>
+After finding an Item of interest, Wisher (Aladdin)s must create a valid Wisher (Aladdin)’ Request. The Wisher (Aladdin) Request is made when the Wisher (Aladdin) uses the Sky Flicker Platform submission tool to (i) describe the item specifically including the price; (ii) to add the location (City and Country) where the Wisher (Aladdin) is or where they want the Sky Flicker Items brought, and (iii) to add the desired receipt date. Sky Flicker advises Wisher (Aladdin) to be as specific as possible, and provides a place to “Include a Note to Your Traveler” to help ensure that a Traveler obtains and brings only the desired item. Wisher (Aladdin) shall not request Prohibited Sky Flicker Items.
+
+<br>
+<br> <i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+Counterfeit goods
+<br><i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+Currency
+<br><i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+Stolen property
+<br><i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+Alcohol
+<br><i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+Live animals
+<br><i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+Firearms, ammunition, explosives or chemicals
+<br><i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+Human remains
+<br><i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+Pornography or obscene materials
+<br><i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+Illegal drugs or regulated drugs (prescription) in violation of law
+<br><i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+Any product or item related to illegal activities, such as the production of illegal drugs
+<br><i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+Any item that is prohibited by law in the place of origin, destination or any jurisdiction of transit through between origin and destination
+Batteries
+<br><i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+Aerosols or any flammable materials
+<br><i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+Knives, batons or other weapons
+<br><i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+Certain agricultural products
+<br><i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+Any Kind of Prohibit items of Customs of Bangladesh Govt.
+<br> <br>
+Sky Flicker recommends that Wisher (Aladdin) and Travelers (Jinn) consult their respective government agencies which regulate items that may and may not be brought into or out of a country of origin.
+<br> <br>
+<b>Suggested Traveler Fees</b>
+<br> <br>
+When the Wisher (Aladdin) creates a Wisher Request, the Sky Flicker Platform may auto-calculate a suggested, optimal Traveler Fee, for illustrative purposes in planning the Wisher transaction. As explained below in the section “Fees,” the actual Traveler Fee on any given transaction is set entirely by the Traveler and may be more than, or less than the suggested Traveler Fee.
+<br> <br>
+<b>The Travelers Offer</b>
+<br> <br>
+To assist Members to locate and communicate with each other, including potentially dates upon which Members can meet in person, The Sky Flicker Platform allows Travelers to enter the details of upcoming travel dates, and to browse published Wisher (Aladdin) Requests made by their Sky Flicker friends. Travelers can indicate their preference to be notified of upcoming Wisher (Aladdin) Requests that may correspond to their planned trips, or trips that they may be willing to take.
+<br> <br>
+Upon finding a suitable Wisher (Aladdin) Request, Traveler must submit a “Traveler’s Offer”. The Traveler’s Offer must contain and describe each component of the Total Fees:
+<br> <br>
+<b>Fees</b>
+<br> <br>
+The following components that make up the Total Fees must be contained in, and fully described in the Traveler’s Offer. When Accepted, the Traveler’s Offer establishes the final and total amounts to which the Wisher (Aladdin) agrees to share profit & Sky Flicker will take 20% on profit share from Wisher.
+<br> <br>
+(i) Sky Flicker Item Cost: Although a Wisher (Aladdin) may specify a price in the Request, the actual Sky Flicker Item Cost shall be the amount specified by the Traveler in the Offer;
+<br> <br>
+(ii) Service Fee: This is as service fee charged by and retained by Sky Flicker for the use of its Sky Flicker Platform by Wisher (Aladdin) and Travelers. Service Fees are collected by Sky Flicker from Wisher (Aladdin)s and deducted from remaining amounts remitted to Travelers by Sky Flicker as the Traveler’s limited payment collection agent as described above. Service Fees are non-refundable.
+<br> <br>
+(iii) Traveler’s Fee: The Traveler’s Fee is the amount Wisher (Aladdin) agree to give to their Traveler friends for helping the Wisher (Aladdin). As set forth above, Sky Flicker may estimate a Traveler’s Fee for planning purposes, but the actual Traveler’s Fee is set by the Traveler in the Offer. The Service Fee and Traveler’s Fee may collectively be referred to by Sky Flicker as the “Platform Fees).”
+<br> <br>
+(iv) Acceleration Fee: The Expedited Fee, if any, may be added to Sky Flicker Items with the consent of both Wisher (Aladdin) and Traveler to accelerate the time in which Travelers may obtain and bring Sky Flicker Items.
+<br> <br>
+(v) Applicable Taxes: Sky Flicker may auto-calculate an estimate of sales and other taxes associated with the Traveler’s Offer. Sky Flicker always separately states the Applicable Taxes from the Item Cost, and the Platform Fees.
+<br> <br>
+(vi) All government fees, tariffs and duties are the responsibility of the Traveler and Traveler is required to make sure that the Wisher (Aladdin) is aware of such fees prior to accepting the offer.
+<br> <br>
+<b>Wisher (Aladdin) Acceptance</b>
+<br> <br>
+When the Wisher (Aladdin) and Traveler have agreed to all aspects, including applicable timing and Total Fees, the Wisher (Aladdin) must agree to the Traveler’s Offer, in what we call the “Wisher (Aladdin) Acceptance.” The Wisher (Aladdin) Acceptance is a agreement on all material terms between a Wisher (Aladdin) and Traveler, under which they agree to be bound to each other to in the manner agreed.
+<br> <br>
+<b>Acceptance of Sky Flicker Items</b>
+<br> <br>
+The Wisher (Aladdin) and Travelers must agree at the time the Wisher (Aladdin) Request is accepted by the Traveler on a specific time period for acceptance of the Sky Flicker items. Travelers shall bear the responsibility to identify an acceptable safe and public place to meet with their Wisher (Aladdin) for the purpose of inspection and exchange of goods. The time for delivery can be extended only by written agreement between the Wisher (Aladdin) and Traveler on the Sky Flicker Platform, or by Sky Flicker. Unless the parties otherwise agree in writing, it is the Wisher (Aladdin) obligation to inspect and accept the Sky Flicker items at the time of delivery, and the agreement between the parties is deemed complete at the time of acceptance regardless of whether the Wisher (Aladdin) shows up to inspect and accept Sky Flicker items. Unless the Traveler and Wisher (Aladdin) have agreed otherwise in writing, if the goods are not made available for delivery and acceptance within five (5) days of the delivery date, and the Wisher (Aladdin) has not inspected and accepted the Sky Flicker Items, the Wisher (Aladdin) Payment Method will be charged and the amounts released to the Traveler. The only permissible method to extend the delivery, inspection and acceptance periods agreed to by the Wisher (Aladdin) and Traveler is written communication between the parties on the Sky Flicker Platform or through notification by Sky Flicker through the Sky Flicker Platform.
+<br> <br>
+<b>Instant Possession</b>
+<br> <br>
+In Sky Flicker sole discretion, it may offer Wisher (Aladdin) and Travelers the option to request, pay for and perform an “Instant Possession” where Members can agree to all relevant terms up front without negotiation. With Instant Possession, when enabled, the Wisher (Aladdin) Requests Sky Flicker Items, and agrees that his or her chosen payment method will be charged for the full amount of Total Fees upon the Traveler’s Acceptance. With Instant Possession, the Wisher (Aladdin), and not the Traveler, establishes or confirms all components of the Total Fees at the time of the Wisher (Aladdin) Offer, including the Item Cost, the Service Fee, the Traveler’s Fee, the Acceleration Fee (if applicable), the Applicable Taxes. All Total Fees are established when the Wisher (Aladdin) makes the offer and the Wisher (Aladdin) payment method is charged at the time of the Traveler’s acceptance.
+<br> <br>
+Travelers who wish to perform an Instant Possession can select one or more Instant Possessions that correspond to their chosen or preferred travel, and agree that they will receive only the amounts specified in the Wisher (Aladdin) Instant Possession Offer. For example, a Traveler accepting an Instant Possession will not be able to adjust the Item Cost or the suggested Traveler Fees when an Instant Possession is accepted by the Traveler. Wisher (Aladdin) remain responsible at all times for paying the Total Fees, including the non-refundable Service Fee, as specified in the Instant Possession.
+<br> <br>
+Sky Flicker may offer alternative options for the timing and manner of payment for Sky Flicker Items, in its sole discretion.
+
+If S<br> <br>ky Flicker is unable to collect any amounts due from Wisher (Aladdin) under these Terms via the chosen payment method, Wisher (Aladdin) authorize Sky Flicker to charge any other payment method on file with Sky Flicker (unless any have been previously removed or the authorization to charge them has been previously rescinded). Wisher (Aladdin) also expressly authorize Sky Flicker to recover any costs and expenses it incurs in collecting any Total Fees not paid or collected via your chosen payment method that remain due and owing. Sky Flicker is not responsible for any fees or charges that a third party payment processor may impose when payment methods are charged or disputed, and disclaims all such liability.
+</p>
+<p>
+<b>Permission</b>
+<br> <br>
+< uses-permission android:name=”android.permission.CALL_PHONE” /><br>
+< uses-permission android:name=”android.permission.INTERNET” /><br>
+< uses-permission android:name=”android.permission.ACCESS_NETWORK_STATE” /><br>
+< uses-permission android:name=”android.permission.READ_PHONE_STATE” /><br>
+< uses-permission android:name=”android.permission.WRITE_EXTERNAL_STORAGE” /><br>
+< uses-permission android:name=”android.permission.READ_EXTERNAL_STORAGE” /><br>
+</p>
+<p style="text-align: justify;">
+<b>Contact Sky Flicker</b>
+<br> <br>
+If You have any questions, comments, or concerns regarding these terms or the Sky Flicker Platform, you may email us at skyflickers@gmail.com/service@skyflicker.com or by post to: Sky Flicker Limited, Orchid Plaza, 5the Floor, Mirpur Road, Dhaka. Dhaka 1207, Bangladesh
+           <br>
+            <br>
+             <br>
+        </p>
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+<!-- Modal policy -->
+<div class="modal fade" id="policy" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title policy-title" id="exampleModalLabel">Refund and Return Policy</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><img src="img/close.png"></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h3 style="font-weight: 600;" class="myfont-20">Refund and Return Policy</h3>
+        <p class="justify-me">
+          <br>
+         In case of Pre-ordered products, a full refund can be given after the seller refuses to confirm the order. Travelers can take his product money from our office or bank account & digital wallet. We will hold the payment of both parties until they confirm goods. Wishers have to pay full amount of product value. When we get confirmation from the wisher, then we release money to the traveler bank account.
+ <br>
+            <br>
+Wisher (Aladdin) may refuse to accept the Sky Flicker items only if the Traveler has brought incorrect goods (for example, specifications which differ from the agreement between the parties, in terms of brand, color, style, size, etc.) or the condition of the Possession’s items is other than that agreed to between the parties (for example, damaged or used items or otherwise not in the condition represented). Wisher (Aladdin) may not refuse acceptance of Sky Flicker items because they changed their mind about the transaction, or through an attempt to renegotiate the price of the items or because they have found the items elsewhere. Wisher (Aladdin) agree that Sky Flicker, in its sole discretion, may determine whether the reason for rejection is acceptable under applicable policies and if Sky Flicker determines the rejection is impermissible or unauthorized, Wisher (Aladdin) agree that their Payment Method may be charge and the transaction completed as agreed to by the parties. Except as set forth above, in instances where the Wisher (Aladdin) fails to appear for inspection and acceptance within five (5) days of the delivery date, Wisher (Aladdin)s are required to confirm inspection and acceptance of Sky Flicker items in the Sky Flicker messaging on the Platform in order to release funds to Travelers.
+ <br>
+            <br>
+             <h3 style="font-weight: 600;" class="myfont-20">Cancellation</h3>
+            <br>
+Wisher will bear cancellation charge. In case of Pre-ordered products, a full refund can be given after the seller refuses to confirm the order.
+           <br>
+            <br>
+             <br>
+        </p>
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+<!-- Modal privacy -->
+<div class="modal fade" id="privacy" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title privacy-title" id="exampleModalLabel">Privacy Policy</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><img src="img/close.png"></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h3 style="font-weight: 600;">Privacy Policy</h3>
+        <p class="justify-me">
+           <br>
+         Thank you for choosing to be part of our community at Sky Flicker Limited (“Company”, “we”, “us”, or “our”). We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about our policy, or our practices with regards to your personal information, please contact us at skyflickers@gmail.com.
+          <br> <br>
+When you visit our mobile application and use our services, you trust us with your personal information. We take your privacy very seriously. In this privacy policy, we seek to explain to you in the clearest way possible what information we collect, how we use it and what rights you have in relation to it. We hope you take some time to read through it carefully, as it is important. If there are any terms in this privacy policy that you do not agree with, please discontinue use of our Apps and our services.
+ <br> <br>
+This privacy policy applies to all information collected through our mobile application, (“Apps“), and/or any related services, sales, marketing or events (we refer to them collectively in this privacy policy as the “Services“).
+ <br> <br>
+<b>Please read this privacy policy carefully as it will help you make informed decisions about sharing your personal information with us.</b>
+ <br> <br>
+<b>1. WHAT INFORMATION DO WE COLLECT?</b>
+ <br> <br>
+<b>Personal information you disclose to us</b>
+ <br> <br>
+<b>In Short:</b>  We collect personal information that you provide to us.
+ <br> <br>
+We collect personal information that you voluntarily provide to us when registering at the Apps, expressing an interest in obtaining information about us or our products and services, when participating in activities on the Apps (such as posting messages in our online forums or entering competitions, contests or giveaways) or otherwise contacting us.
+ <br> <br>
+The personal information that we collect depends on the context of your interactions with us and the Apps, the choices you make and the products and features you use. The personal information we collect can include the following:
+ <br> <br>
+<b>Publicly Available Personal Information.</b>  We collect first name, maiden name, last name, and nickname; ID; driver’s license number; passport number; current and former address; email addresses; phone numbers; social media; and other similar data. 
+ <br> <br>
+<b>Social Media Login Data.</b> We may provide you with the option to register using social media account details, like your Facebook.
+ <br> <br>
+All personal information that you provide to us must be true, complete and accurate, and you must notify us of any changes to such personal information.
+ <br> <br>
+
+<b>Information collected through our Apps</b>
+ <br> <br>
+<b>In Short:</b>   We may collect information regarding your geo-location, mobile device, push notifications, when you use our apps.
+ <br> <br>
+If you use our Apps, we may also collect the following information:
+ <br> <br>
+<i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+    Geo-Location Information. We may request access or permission to and track location-based information from your mobile device, either continuously or while you are using our mobile application, to provide location-based services. If you wish to change our access or permissions, you may do so in your device’s settings.
+     <br> <br>
+<i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+   Mobile Device Access. We may request access or permission to certain features from your mobile device, including your mobile device’s storage, social media accounts, and other features. If you wish to change our access or permissions, you may do so in your device’s settings.
+  <br> <br>
+<i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+    Push Notifications. We may request to send you to push notifications regarding your account or the mobile application. If you wish to opt-out from receiving these types of communications, you may turn them off in your device’s settings.
+  <br> <br>
+<b>2. HOW DO WE USE YOUR INFORMATION?</b>
+ <br> <br>
+<b>In Short:</b>  We process your information for purposes based on legitimate business interests, the fulfillment of our contract with you, compliance with our legal obligations, and/or your consent.
+ <br> <br>
+We use personal information collected via our Apps for a variety of business purposes described below. We process your personal information for these purposes in reliance on our legitimate business interests, in order to enter into or perform a contract with you, with your consent, and/or for compliance with our legal obligations. We indicate the specific processing grounds we rely on next to each purpose listed below.
+ <br> <br>
+We use the information we collect or receive:
+ <br> <br>
+<i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+    <b>To facilitate account creation and login process.</b> If you choose to link your account with us to a third party account (such as your Google or Facebook account), we use the information you allowed us to collect from those third parties to facilitate account creation and login process for the performance of the contract.
+  <br> <br>
+<i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+    <b>To send you marketing and promotional communications.</b> We and/or our third-party marketing partners may use the personal information you send to us for our marketing purposes if this is in accordance with your marketing preferences.
+   <br> <br>
+<i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+    <b>To send administrative information to you.</b> We may use your personal information to send you the product, service, and new feature information and/or information about changes to our terms, conditions, and policies.
+  <br> <br>
+<i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+    <b>Fulfill and manage your orders.</b> We may use your information to fulfill and manage your orders, payments, returns, and exchanges made through the Apps.
+   <br> <br>
+<i class="fa fa-circle myfa-circle" aria-hidden="true"></i> 
+<b>Request Feedback.</b> We may use your information to request feedback and to contact you about your use of our Apps.
+  <br> <br>
+<i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+    <b>To enable user-to-user communications.</b> We may use your information in order to enable user-to-user communications with each user’s consent.
+   <br> <br>
+<i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+    
+<b>To enforce our terms, conditions and policies for Business Purposes, Legal Reasons and Contractual.</b>
+  <br> <br>
+<i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+   <b> To respond to legal requests and prevent harm.</b> If we receive a subpoena or other legal request, we may need to inspect the data we hold to determine how to respond.
+  <br> <br>
+<i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+   <b> To manage user accounts.</b> We may use your information for the purposes of managing our account and keeping it in working order.
+  < <br> <br>
+<i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+                             
+<b>To deliver services to the user.</b> We may use your information to provide you with the requested service.
+   <br> <br>
+<i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+   <b> To respond to user inquiries/offer support to users.</b> We may use your information to respond to your inquiries and solve any potential issues you might have with the use of our Services.
+   <br> <br>
+<i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+    
+<b>For other Business Purposes.</b> We may use your information for other Business Purposes, such as data analysis, identifying usage trends, determining the effectiveness of our promotional campaigns and to evaluate and improve our Apps, products, marketing, and your experience. We may use and store this information in aggregated and anonymized form so that it is not associated with individual end-users and does not include personal information. We will not use identifiable personal information without your consent.
+   <br> <br>
+<b>3. WILL YOUR INFORMATION BE SHARED WITH ANYONE?</b>
+
+<b>In Short: </b> We only share information with your consent, to comply with laws, to provide you with services, to protect your rights, or to fulfill business obligations.
+  <br> <br>
+We may process or share data based on the following legal basis:
+  <br> <br>
+<i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+  <b>Consent:</b> We may process your data if you have given us specific consent to use your personal information for a specific purpose.
+<br> <br>
+<i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+<b>Legitimate Interests:</b> We may process your data when it is reasonably necessary to achieve our legitimate business interests.
+<br> <br>
+<i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+<b>Performance of a Contract:</b> Where we have entered into a contract with you, we may process your personal information to fulfill the terms of our contract.
+<br> <br>
+<i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+<b>Legal Obligations:</b> We may disclose your information where we are legally required to do so in order to comply with applicable law, governmental requests, a judicial proceeding, court order, or legal process, such as in response to a court order or a subpoena (including in response to public authorities to meet national security or law enforcement requirements).
+<br> <br>
+<i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+<b>Vital Interests:</b> We may disclose your information where we believe it is necessary to investigate, prevent, or take action regarding potential violations of our policies, suspected fraud, situations involving potential threats to the safety of any person and illegal activities, or as evidence in litigation in which we are involved.
+<br> <br>
+More specifically, we may need to process your data or share your personal information in the following situations:
+<br> <br>
+<i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+<b>Vendors, Consultants, and Other Third-Party Service Providers.</b> We may share your data with third-party vendors, service providers, contractors or agents who perform services for us or on our behalf and require access to such information to do that work. Examples include payment processing, data analysis, email delivery, hosting services, customer service, and marketing efforts. We may allow selected third parties to use tracking technology on the Apps, which will enable them to collect data about how you interact with the Apps over time. This information may be used to, among other things, analyze and track data, determine the popularity of certain content and better understand online activity. Unless described in this Policy, we do not share, sell, rent or trade any of your information with third parties for their promotional purposes.
+<br> <br>
+<i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+<b>Business Transfers.</b> We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.
+<br> <br>
+<i class="fa fa-circle myfa-circle" aria-hidden="true"></i>
+<b>Third-Party Advertisers.</b> We may use third-party advertising companies to serve ads when you visit the Apps. These companies may use information about your visits to our Website(s) and other websites that are contained in web cookies and other tracking technologies in order to provide advertisements about goods and services of interest to you.
+<br> <br>
+<b>4. HOW DO WE HANDLE YOUR SOCIAL LOGINS?</b>
+<br> <br>
+<b>In Short:</b>  If you choose to register or log in to our services using a social media account, we may have access to certain information about you.
+<br> <br>
+Our Apps offer you the ability to register and login using your third party social media account details (like your Facebook login). Where you choose to do this, we will receive certain profile information about you from your social media provider. The profile Information we receive may vary depending on the social media provider concerned, but will often include your name, e-mail address, friends list, profile picture as well as other information you choose to make public.
+<br> <br>
+We will use the information we receive only for the purposes that are described in this privacy policy or that are otherwise made clear to you on the Apps. Please note that we do not control, and are not responsible for, other uses of your personal information by your third party social media provider. We recommend that you review their privacy policy to understand how they collect, use and share your personal information, and how you can set your privacy preferences on their sites and apps.
+<br> <br>
+<b>5. HOW LONG DO WE KEEP YOUR INFORMATION?</b>
+<br> <br>
+<b>In Short:</b>  We keep your information for as long as necessary to fulfill the purposes outlined in this privacy policy unless otherwise required by law.
+<br> <br>
+We will only keep your personal information for as long as it is necessary for the purposes set out in this privacy policy, unless a longer retention period is required or permitted by law (such as tax, accounting or other legal requirements). No purpose in this policy will require us to keep your personal information for longer than the period of time in which users have an account with us.
+<br> <br>
+When we have no ongoing legitimate business need to process your personal information, we will either delete or anonymize it, or, if this is not possible (for example, because your personal information has been stored in backup archives), then we will securely store your personal information and isolate it from any further processing until deletion is possible.
+<br> <br>
+<b>6. HOW DO WE KEEP YOUR INFORMATION SAFE?</b>
+<br> <br>
+<b>In Short:</b>  We aim to protect your personal information through a system of organizational and technical security measures.
+<br> <br>
+We have implemented appropriate technical and organizational security measures designed to protect the security of any personal information we process. However, please also remember that we cannot guarantee that the internet itself is 100% secure. Although we will do our best to protect your personal information, transmission of personal information to and from our Apps is at your own risk. You should only access the services within a secure environment.
+<br> <br>
+<b>7. DO WE COLLECT INFORMATION under 18 years old & minimun age to become Sky Flicker user ?</b>
+<br> <br>
+<b>In Short:</b>  Our apps are not designed to appeal to persons under 18 years old. We do not knowingly collect data from or market under 18 years of age.
+<br> <br>
+We do not knowingly solicit data from or market under 18 years of age. By using the Apps, you represent that you are at least 18 or that you are the parent or guardian of such a minor and consent to such minor dependent’s use of the Apps. If we learn that personal information from users less than 18 years of age has been collected, we will deactivate the account and take reasonable measures to promptly delete such data from our records. If you become aware of any data we have collected under age 18, please contact us at skyflickers@gmail.com.
+<br> <br>
+<b>8. WHAT ARE YOUR PRIVACY RIGHTS?</b>
+<br> <br>
+<b>In Short:</b>  You may review, change, or terminate your account at any time.
+<br> <br>
+If you have questions or comments about your privacy rights, you may email us at skyflickers@gmail.com.
+<br> <br>
+<b>Account Information</b>
+<br> <br>
+If you would at any time like to review or change the information in your account or terminate your account, you can:
+<br> <br>
+■  Log into your account profile and update your user account.
+<br> <br>
+Upon your request to terminate your account, we will deactivate or delete your account and information from our active databases. However, some information may be retained in our files to prevent fraud, troubleshoot problems, assist with any investigations, enforce our Terms of Use and/or comply with legal requirements.
+<br> <br>
+<b>Cookies and similar technologies:</b> Most Web browsers are set to accept cookies by default. If you prefer, you can usually choose to set your browser to remove cookies and to reject cookies. If you choose to remove cookies or reject cookies, this could affect certain features or services of our Apps.
+<br> <br>
+<b>Opting out of email marketing:</b> You can unsubscribe from our marketing email list at any time by sending email us that we send or by contacting us using the details provided below. You will then be removed from the marketing email list – however, we will still need to send you service-related emails that are necessary for the administration and use of your account. To otherwise opt-out, you may:
+<br> <br>
+ ■  Access your account settings and update preferences.
+<br> <br>
+<b>9. CONTROLS FOR DO-NOT-TRACK FEATURES</b>
+<br> <br>
+Most web browsers and some mobile operating systems and mobile applications include a Do-Not-Track (“DNT”) feature or setting you can activate to signal your privacy preference not to have data about your online browsing activities monitored and collected. No uniform technology standard for recognizing and implementing DNT signals has been finalized. As such, we do not currently respond to DNT browser signals or any other mechanism that automatically communicates your choice not to be tracked online. If a standard for online tracking is adopted that we must follow in the future, we will inform you about that practice in a revised version of this privacy policy.
+<br> <br>
+<b>10. DO WE MAKE UPDATES TO THIS POLICY?</b>
+<br> <br>
+<b>In Short:</b>  Yes, we will update this policy as necessary to stay compliant with relevant laws.
+<br> <br>
+<b>We may update this privacy policy from time to time</b>. The updated version will be indicated by an updated “Revised” date and the updated version will be effective as soon as it is accessible. If we make material changes to this privacy policy, we may notify you either by prominently posting a notice of such changes or by directly sending you a notification. We encourage you to review this privacy policy frequently to be informed of how we are protecting your information.
+<br> <br>
+<b>11. HOW CAN YOU CONTACT US ABOUT THIS POLICY?</b>
+<br> <br>
+If you have questions or comments about this policy, you may email us at skyflickers@gmail.com/service@skyflicker.com or by post to:
+<br> <br>
+Sky Flicker Limited, Orchid Plaza, 5the Floor, Mirpur Road, Dhaka. Dhaka 1207, Bangladesh
+<br> <br>
+<b>12. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</b>
+<br> <br>
+Based on the laws of some countries, you may have the right to request access to the personal information we collect from you, change that information, or delete it in some circumstances. To request to review, update, or delete your personal information, please submit a request form by clicking here. We will respond to your request within 30 days.
+<br> <br>
+<b>13. Permission</b>
+        </p>
+        <p>
+          < uses-permission android:name=”android.permission.CALL_PHONE” /> <br>
+< uses-permission android:name=”android.permission.INTERNET” /> <br>
+< uses-permission android:name=”android.permission.ACCESS_NETWORK_STATE” />  <br>
+< uses-permission android:name=”android.permission.READ_PHONE_STATE” />  <br>
+< uses-permission android:name=”android.permission.WRITE_EXTERNAL_STORAGE” />  <br>
+< uses-permission android:name=”android.permission.READ_EXTERNAL_STORAGE” />  <br>
+           <br>
+            <br>
+             <br>
+        </p>
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
